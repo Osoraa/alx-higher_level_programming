@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "#!/usr/bin/python3" > job.py
+echo "${PYCODE}" >> job.py
+python3 job.py
