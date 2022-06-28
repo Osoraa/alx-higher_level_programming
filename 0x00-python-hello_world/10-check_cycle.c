@@ -1,6 +1,6 @@
 #include "lists.h"
 
-int traverse(listint_t *slow, listint_t *fast);
+/* int traverse(listint_t *slow, listint_t *fast); */
 /**
  * check_cycle - Checks if theres a cycle in a linked list.
  * @list: list head.
@@ -9,13 +9,26 @@ int traverse(listint_t *slow, listint_t *fast);
  */
 int check_cycle(listint_t *list)
 {
+	listint_t *slow = list;
+	listint_t *fast = list;
+
 	if (!list || !(list->next))
 		return (0);
 
-	return (traverse(list->next, list->next->next));
+	while (fast->next)
+	{
+		if (slow == fast)
+			return (1);
+
+		slow = slow->next;
+		fast = fast->next->next;
+	}
+
+	return (0);
+	/* return (traverse(list->next, list->next->next)); */
 }
 
-int traverse(listint_t *slow, listint_t *fast)
+/* int traverse(listint_t *slow, listint_t *fast)
 {
 	if (slow == fast)
 		return (1);
@@ -24,4 +37,4 @@ int traverse(listint_t *slow, listint_t *fast)
 		return (traverse(slow->next, fast->next->next));
 
 	return (0);
-}
+} */
