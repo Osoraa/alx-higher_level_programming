@@ -9,12 +9,10 @@ int traverse(listint_t *slow, listint_t *fast);
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *trav = list->next;
-
-	if (!list || !trav->next)
+	if (!list || !(list->next))
 		return (0);
 
-	return (traverse(trav, trav->next));
+	return (traverse(list->next, list->next->next));
 }
 
 int traverse(listint_t *slow, listint_t *fast)
