@@ -2,7 +2,7 @@
 
 /**
  * insert_node - Inserts a number in a sorted linked list.
- * 
+ *
  * @head: List beginning.
  * @number: Integer value of the node to insert in the list.
  *
@@ -10,27 +10,23 @@
  */
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *current = *head, *prev, *node;
+	listint_t *current = *head, *prev = NULL, *node;
 
+	/* Create the linked-list node */
 	node = malloc(sizeof(listint_t));
 	if (!node)
 		return (NULL);
 	node->n = number;
 	node->next = NULL;
 
+	/* If linked list is enpty, insert new node */
 	if (!(current))
 	{
 		*head = node;
 		return (node);
 	}
 
-	if (current->n > number)
-	{
-		node->next = current;
-		*head = node;
-		return (node);
-	}
-
+	/* Insert node in correct position */
 	while (current->n < number)
 	{
 		if (current->next != NULL)
@@ -44,6 +40,10 @@ listint_t *insert_node(listint_t **head, int number)
 	}
 
 	node->next = current;
-	prev->next = node;
+	if (prev)
+		prev->next = node;
+	else
+		*head = node;
+
 	return (node);
 }
