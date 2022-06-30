@@ -10,6 +10,7 @@ def main():
 
     print("{:d} argument{:s}:".format(argLen, "s" if argLen > 1 else ""))
 
+    # Loop through arguments and print
     for index in range(1, argLen + 1):
         print(f"{index:d}: {argv[index]:s}")
 
