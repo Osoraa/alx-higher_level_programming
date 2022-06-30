@@ -1,3 +1,11 @@
+# Local
+.vscode
+_putchar.c
+temp
+test.c
+demo.c
+*zip*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
