@@ -22,7 +22,7 @@ def main():
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
-    print("{} {} {} = {}".format(a, op, b, op_dict[op]))
+    print("{:d} {:s} {:d} = {:d}".format(a, op, b, op_dict[op]))
 
 
 if __name__ == "__main__":
