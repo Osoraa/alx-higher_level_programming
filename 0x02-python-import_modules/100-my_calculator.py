@@ -5,9 +5,7 @@ from calculator_1 import add, sub, div, mul
 
 def main():
     if len(argv) != 4:
-        # print(f"Usage: {argv[0]:s} <a> <operator> <b>")
-        for arg in argv:
-            print(arg)
+        print(f"Usage: {argv[0]:s} <a> <operator> <b>")
         exit(1)
 
     a, op, b = int(argv[1]), argv[2], int(argv[3])
