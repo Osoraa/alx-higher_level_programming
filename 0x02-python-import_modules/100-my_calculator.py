@@ -15,14 +15,14 @@ def main():
         "+": add(a, b),
         "-": sub(a, b),
         "*": mul(a, b),
-        "/": div(a, b),
+        "/": div(a, b)
     }
 
-    if op not in "+-*/":
+    if op not in op_dict.keys:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
-    print("{:d} {:s} {:d} = {:d}".format(a, op, b, op_dict[op]))
+    print("{} {} {} = {}".format(a, op, b, op_dict[op]))
 
 
 if __name__ == "__main__":
