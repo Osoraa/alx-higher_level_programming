@@ -18,7 +18,7 @@ def main():
         "/": div(a, b)
     }
 
-    if op not in op_dict.keys:
+    if op not in op_dict.keys():
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
