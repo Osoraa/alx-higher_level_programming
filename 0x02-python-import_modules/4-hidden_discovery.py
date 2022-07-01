@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-__import__("0-add")
+import hidden_4
 
 
 def main():
-    names = [name for name in dir("0-add")]
+    names = [name for name in dir("") if name[:2] != "__"]
     for name in names:
         print(name)
 
