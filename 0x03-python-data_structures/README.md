@@ -1,4 +1,4 @@
-# Solutions to the "0x03 Python - Data Structures: Lists, Tuples" project
+# Solutions to the **_0x03 Python - Data Structures: Lists, Tuples_** project
 
 ## Strategy
 
