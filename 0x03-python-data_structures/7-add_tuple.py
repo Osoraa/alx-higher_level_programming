@@ -8,9 +8,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
         a.append(0)
         b.append(0)
 
-    a = a[:2]
-    b = b[:2]
-
     return tuple([a[i] + b[i] for i in range(2)])
 
 
