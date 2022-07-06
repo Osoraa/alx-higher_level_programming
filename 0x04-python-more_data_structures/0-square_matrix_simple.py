@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-def square_matrix_simple(matrix=[]):
+
+def square_matrix_simple(matrix=[]) -> list[int]:
     return [[col * col for col in row] for row in matrix]
 
 
