@@ -2,7 +2,7 @@
 
 
 def simple_delete(a_dict=None, key="") -> dict:
-    a_dict.pop(key, None) # if key in a_dict.keys() else None
+    a_dict.pop(key, None)  # if key in a_dict.keys() else None
     return a_dict
 
 
