@@ -10,6 +10,12 @@ def best_score(a_dict={}):
     dict_list = [[key, value] for key, value in a_dict.items()]
     dict_list.sort(key=lambda x: x[1], reverse=True)
 
+    """
+        A one-liner/pythonic method is to return the max value of the dict
+        with the key being to get the dict values.
+
+        return max(a_dict, key=a_dict.get)
+    """
     return dict_list[0][0]
 
 
