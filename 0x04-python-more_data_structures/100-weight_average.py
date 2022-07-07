@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def weight_average(my_list=[]):
+def weight_average(my_list=[]) -> float:
     if not my_list:
         return 0
 
