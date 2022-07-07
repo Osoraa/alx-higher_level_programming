@@ -11,8 +11,8 @@ def best_score(a_dict={}):
     dict_list.sort(key=lambda x: x[1], reverse=True)
 
     """
-        A one-liner/pythonic method is to return the max value of the dict
-        with the key being to get the dict values.
+        A one-liner/pythonic method is to return the key of the max_value
+        queried by the dict_values.
 
         return max(a_dict, key=a_dict.get)
     """
