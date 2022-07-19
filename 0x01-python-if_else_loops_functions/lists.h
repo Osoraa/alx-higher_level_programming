@@ -27,4 +27,3 @@ listint_t *insert_node(listint_t **head, int number);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 
 #endif /* LISTS_H */
-
