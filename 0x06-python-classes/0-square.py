@@ -2,7 +2,9 @@
 
 class Square():
     """Defines a Square class."""
-    pass
+
+    def __init__(self) -> None:
+        pass
 
 
 if __name__ == "__main__":
