@@ -6,7 +6,7 @@
 class Square():
     """Defines a Square class."""
 
-    def __init__(self, name) -> None:
+    def __init__(self, name=None) -> None:
         self.name = name
 
     @property
