@@ -3,7 +3,7 @@
 """Defines a Square class."""
 
 
-class Square():
+class Square:
     """Defines a Square class."""
 
     def __init__(self, size=0, position=(0, 0)):
@@ -11,7 +11,11 @@ class Square():
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        if not isinstance(position, tuple) or min(position) < 0 or not len(position) == 2:
+        if (
+            not isinstance(position, tuple)
+            or min(position) < 0
+            or not len(position) == 2
+        ):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__size = size
         self.__position = position
@@ -35,7 +39,7 @@ class Square():
     def area(self):
         """Calculates the area of a square"""
 
-        return self.__size ** 2
+        return self.__size**2
 
     def my_print(self):
         """Prints a square to stdout"""
