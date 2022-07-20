@@ -3,9 +3,6 @@
 """Defines a Square class."""
 
 
-from turtle import pos
-
-
 class Square():
     """Defines a Square class."""
 
