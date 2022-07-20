@@ -3,6 +3,9 @@
 """Defines a Square class."""
 
 
+from turtle import position
+
+
 class Square:
     """Defines a Square class."""
 
@@ -45,6 +48,10 @@ class Square:
     def my_print(self):
         """Prints a square to stdout"""
 
+        # Print (lines * position[1])
+        for _ in range(self.__position[1]): print()
+
+        # Print square with each line preceeded by (space * position[0])
         if self.__size:
             for _ in range(self.__size):
                 print(f"{' ' * self.__position[0]}{'#' * self.__size}")
