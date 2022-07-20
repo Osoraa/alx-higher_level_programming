@@ -11,15 +11,20 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        if (
-            not isinstance(position, tuple)
-            or min(position) < 0
-            or not len(position) == 2
-            or not all(isinstance(i, int) for i in position)
-        ):
+        try:
+            a, b = position
+            self.__position = a, b if not min(a, b) < 0 else 0, 0
+        except:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        # if (
+        #     not isinstance(position, tuple)
+        #     or not len(position) == 2
+        #     or not all(isinstance(i, int) for i in position)
+        #     or min(position) < 0
+        # ):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__size = size
-        self.__position = position
+        # self.__position = position
 
     @property
     def size(self):
