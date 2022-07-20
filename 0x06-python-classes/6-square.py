@@ -22,7 +22,7 @@ class Square:
         #     or not all(isinstance(i, int) for i in position)
         #     or min(position) < 0
         # ):
-            raise TypeError("position must be a tuple of 2 positive integers")
+            # raise TypeError("position must be a tuple of 2 positive integers")
         self.__size = size
         # self.__position = position
 
