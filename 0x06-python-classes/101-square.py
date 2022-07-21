@@ -15,7 +15,7 @@ class Square:
         square = ""
 
         if not self.__size:
-            return "\n"
+            return ""
 
         # Print (lines * position[1])
         for _ in range(self.__position[1]):
