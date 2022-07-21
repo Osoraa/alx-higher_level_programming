@@ -54,18 +54,20 @@ class SinglyLinkedList:
         current = self.__head
         prev = None
 
-        # If empty List, node becomes first 
+        # If empty List, node becomes first
         node = Node(node)
         if not current:
             self.__head = node
             return
 
+        # If new node value is greater than list head value
         if current.data > node.data:
             node.next_node = current
             self.__head = node
             return
 
-        while current.data <= node.data:
+        # Else increment and check if new node value <= next list node value
+        while current.data < node.data:
             if not current.next_node:
                 current.next_node = node
                 return
@@ -74,5 +76,6 @@ class SinglyLinkedList:
             current = current.next_node
             continue
 
+        # Then new node value is > than current node value
         prev.next_node = node
         node.next_node = current
