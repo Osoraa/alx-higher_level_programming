@@ -67,7 +67,7 @@ class SinglyLinkedList:
             return
 
         # Else increment and check if new node value <= next list node value
-        while current.data < node.data:
+        while current.data <= node.data:
             if not current.next_node:
                 current.next_node = node
                 return
