@@ -22,9 +22,10 @@ class Square:
             square += "\n"
 
         # Print square with each line preceeded by (space * position[0])
-        for _ in range(self.__size):
-            square += f"{' ' * self.__position[0]}{'#' * self.__size}\n"
-        
+        for unit in range(self.__size):
+            square += f"{' ' * self.__position[0]}{'#' * self.__size}"
+            square += "\n" if unit+1 < self.__size else ""
+
         return square
 
     @property
@@ -53,7 +54,6 @@ class Square:
         ):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
-
 
     def area(self):
         """Calculates the area of a square"""
