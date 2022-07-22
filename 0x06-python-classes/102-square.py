@@ -21,6 +21,12 @@ class Square():
     def __le__(self, other):
         return self.size <= other.size
 
+    def __ne__(self, other):
+        return self.size != other.size
+
+    def __eq__(self, other):
+        return self.size == other.size
+
     @property
     def size(self):
         return self.__size
