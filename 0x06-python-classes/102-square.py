@@ -17,7 +17,7 @@ class Square():
 
     def __ge__(self, other):
         return self.size >= other.size
-    
+
     def __le__(self, other):
         return self.size <= other.size
 
@@ -43,5 +43,3 @@ class Square():
         """Calculates the area of a square"""
 
         return self.__size ** 2
-
-
