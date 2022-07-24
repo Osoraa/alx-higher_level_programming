@@ -29,14 +29,18 @@ class Square():
 
     @property
     def size(self):
+        """Getter property for __size"""
+
         return self.__size
 
     @size.setter
     def size(self, value):
         if not isinstance(value, (int, float)):
             raise TypeError("size must be a number")
-        elif value < 0:
+
+        if value < 0:
             raise ValueError("size must be >= 0")
+
         self.__size = value
 
     def area(self):
