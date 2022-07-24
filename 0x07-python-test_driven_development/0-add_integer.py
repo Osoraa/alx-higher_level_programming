@@ -1,6 +1,15 @@
 #!/usr/bin/python3
 """The add_integer module
 
+This module makes available the function add_integer
+
+Simple Usage:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+    >>> add_integer(5, 6)
+    11
+
 """
 
 
