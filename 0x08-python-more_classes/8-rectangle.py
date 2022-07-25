@@ -25,7 +25,6 @@ class Rectangle:
         self.height = height
         self.__class__.set_num(True)
 
-
     def __str__(self) -> str:
         if not (self.__height and self.__width):
             return ""
@@ -102,11 +101,11 @@ class Rectangle:
     @staticmethod
     def bigger_or_equal(rect_1=None, rect_2=None):
         """Compares areas of rectangle
-        
+
         Args:
             rect_1 (Rectangle): First rectangle object to compare.
             rect_2 (Rectangle): Second rectangle object to compare.
-            
+
         Returns:
             Largest rectangle by area.
         """
