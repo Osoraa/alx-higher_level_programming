@@ -87,7 +87,8 @@ class Rectangle:
         if not (self.__height and self.__width):
             return ""
         return "\n".join(
-            [str(self.print_symbol) * self.__width for _ in range(self.__height)]
+            [str(self.print_symbol) * self.__width
+                for _ in range(self.__height)]
         )
 
     def __repr__(self):
