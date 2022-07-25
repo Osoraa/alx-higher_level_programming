@@ -19,7 +19,7 @@ print(new_rectangle)
 print("--")
 print(repr(new_rectangle))
 print("--")
-print(hex(id(new_rectangle)))
+print(id(new_rectangle))
 print("--")
 
 print(new_rectangle is my_rectangle)
