@@ -42,19 +42,6 @@ class Rectangle:
         else:
             cls.number_of_instances -= 1
 
-    # @classmethod
-    # def set_print_sym(cls, arg="#"):
-    #     """Sets the symbol used to print the rectangle.
-
-    #     Args:
-    #         arg (any): Object to use in __str__ method.
-
-    #     Returns:
-    #         None.
-    #     """
-
-    #     cls.print_symbol = arg
-
     @property
     def width(self):
         return self.__width
@@ -123,3 +110,23 @@ class Rectangle:
         if self.__width and self.__height:
             return self.__width * 2 + self.__height * 2
         return 0
+
+    # @classmethod
+    # def set_print_sym(cls, arg="#"):
+    #     """Sets the symbol used to print the rectangle.
+
+    #     Args:
+    #         arg (any): Object to use in __str__ method.
+
+    #     Returns:
+    #         None.
+    #     """
+
+    #     cls.print_symbol = arg
+
+
+
+
+
+
+
