@@ -14,9 +14,11 @@ class Rectangle:
 
     Attributes:
         number_of_instances (int): Instance count.
+        print_symbol: Symbol used to represent
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0) -> None:
         self.width = width
@@ -25,11 +27,33 @@ class Rectangle:
 
     @classmethod
     def set_num(cls, arg):
-        """Modifies the"""
+        """Sets the number of rectangle instances.
+        Called in both initialisation and garbage collection.
+
+        Args:
+            arg (bool): True to increment, False to decrement.
+
+        Returns:
+            None.
+        """
+
         if arg:
             cls.number_of_instances += 1
         else:
             cls.number_of_instances -= 1
+
+    @classmethod
+    def set_print_sym(cls, arg="#"):
+        """Sets the symbol used to print the rectangle.
+
+        Args:
+            arg (any): Object to use in __str__ method.
+
+        Returns:
+            None.
+        """
+
+        cls.print_symbol = arg
 
     @property
     def width(self):
@@ -62,7 +86,9 @@ class Rectangle:
     def __str__(self) -> str:
         if not (self.__height and self.__width):
             return ""
-        return "\n".join(["#" * self.__width for _ in range(self.__height)])
+        return "\n".join(
+            [str(self.print_symbol) * self.__width for _ in range(self.__height)]
+        )
 
     def __repr__(self):
         return f"{self.__class__.__name__}({self.__width}, {self.__height})"

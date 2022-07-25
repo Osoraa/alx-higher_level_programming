@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-Rectangle = __import__("6-rectangle").Rectangle
+from importlib import import_module
+
+Rectangle = import_module("6-rectangle").Rectangle
 
 my_rectangle_1 = Rectangle(2, 4)
 my_rectangle_2 = Rectangle(2, 4)
