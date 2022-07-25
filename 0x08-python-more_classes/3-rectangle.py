@@ -47,6 +47,11 @@ class Rectangle:
 
         self.__height = value
 
+    def __str__(self) -> str:
+        if not (self.__height and self.__width):
+            return ""
+        return "\n".join(["#" * self.__width for _ in range(self.__height)])
+
     def area(self) -> int:
         """Computes the area of a rectangle.
 
