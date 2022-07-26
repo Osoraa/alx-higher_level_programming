@@ -109,7 +109,7 @@ class Rectangle:
             Rectangle Object.
         """
 
-        return Rectangle(size, size)
+        return cls(size, size)
 
     @staticmethod
     def bigger_or_equal(rect_1=None, rect_2=None):
