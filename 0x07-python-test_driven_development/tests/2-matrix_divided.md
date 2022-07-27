@@ -1,11 +1,10 @@
-The ``2-matrix_divided`` module
-======================
+# Doctest document for the matrix_divided module
 
-Import the matrix_divided function from the module:
+## Import the matrix_divided function from the module
 
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-Inputs:
+## Inputs
 
     >>> matrix = [[1, 2, 3], [4, 5, 6]]
     >>> matrix_with_string = [[1, "2", 3], [4, 5, 6]]

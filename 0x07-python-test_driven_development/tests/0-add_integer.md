@@ -1,6 +1,6 @@
-Doctest document for the add_integer module.
+# Doctest document for the add_integer module
 
-Import the add_integer function from the module:
+## Import the add_integer function from the module
 
     >>> add_integer = __import__("0-add_integer").add_integer
 
