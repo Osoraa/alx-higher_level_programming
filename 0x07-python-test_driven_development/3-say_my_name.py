@@ -11,7 +11,7 @@ Simple Usage:
 """
 
 
-def say_my_name(fname=None, lname=""):
+def say_my_name(fname="", lname=""):
     """Prints firstname and lastname of a user in a sentence.
 
     Args:
