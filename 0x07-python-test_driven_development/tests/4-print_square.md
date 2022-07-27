@@ -15,6 +15,8 @@
     Traceback (most recent call last):
     ValueError: size must be >= 0
 
+    >>> print_square()
+
     >>> print_square(0.5)
     Traceback (most recent call last):
     TypeError: size must be an integer
