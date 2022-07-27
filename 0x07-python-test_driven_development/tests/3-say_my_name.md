@@ -33,3 +33,7 @@
         >>> say_my_name(None)
         Traceback (most recent call last):
         TypeError: first_name must be a string
+
+        >>> say_my_name(None)
+        Traceback (most recent call last):
+        TypeError: first_name must be a string
