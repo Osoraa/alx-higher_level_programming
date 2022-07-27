@@ -1,4 +1,4 @@
-# Doctest document for the matrix_divided module
+# Doctest document for the 2-matrix_divided module
 
 ## Import the matrix_divided function from the module
 

@@ -1,4 +1,6 @@
-Doctest document for the add_integer module.
+Doctest document for the 4-print_square module.
+
+Import the print_square function from the module:
 
     >>> print_square = __import__('4-print_square').print_square
 

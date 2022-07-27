@@ -1,6 +1,6 @@
-# Doctest document for the add_integer module
+# Doctest document for the 3-say_my_name module
 
-## Import the add_integer function from the module
+## Import the say_my_name function from the module
 
     >>> say_my_name = __import__('3-say_my_name').say_my_name
     >>> first_name = "Osoraa"
