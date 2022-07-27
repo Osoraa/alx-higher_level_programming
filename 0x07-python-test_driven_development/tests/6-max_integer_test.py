@@ -12,6 +12,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_valid_arguments(self):
         """Valid a"""
         self.assertEqual(max_int([1,2, 3]), 3)
+        self.assertEqual(max_int([1,2, 3][::-1]), 3)
         self.assertEqual(max_int([1,2, -33]), 2)
         self.assertEqual(max_int([1]), 1)
         self.assertEqual(max_int([]), None)
