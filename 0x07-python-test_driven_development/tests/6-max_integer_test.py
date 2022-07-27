@@ -10,10 +10,12 @@ class TestMaxInteger(unittest.TestCase):
     """Class to test the max_integer function."""
 
     def test_valid_arguments(self):
-        """Valid a"""
+        """Valid arguments to max int function"""
+
         self.assertEqual(max_int([1,2, 3]), 3)
         self.assertEqual(max_int([1,2, 3][::-1]), 3)
         self.assertEqual(max_int([1,2, -33]), 2)
+        self.assertEqual(max_int([-1, -62, -33]), -1)
         self.assertEqual(max_int([1]), 1)
         self.assertEqual(max_int([]), None)
         self.assertEqual(max_int(), None)
@@ -21,7 +23,8 @@ class TestMaxInteger(unittest.TestCase):
         # self.assertEqual(max_int("[1, 2, 3]"), 3)
 
     def test_invalid_arguments(self):
-        """Invalud arguments for max_int function"""
+        """Invald arguments for max_int function"""
+
         self.assertRaises(TypeError, max_int, [1,2, "3"])
         self.assertRaises(TypeError, max_int, None)
 
