@@ -19,7 +19,7 @@ def say_my_name(fname=None, lname=""):
         lname: User's last name.
 
     Returns:
-        None
+        None.
     """
 
     if not isinstance(fname, str):
