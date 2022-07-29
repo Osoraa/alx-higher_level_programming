@@ -1,5 +1,262 @@
-..
-----------------------------------------------------------------------
-Ran 2 tests in 0.000s
-
-OK
+Trying:
+    matrix_mul = __import__('100-matrix_mul').matrix_mul
+Expecting nothing
+ok
+Trying:
+    m_a = [
+    [1, 2],
+    [3, 4],
+    ]
+Expecting nothing
+ok
+Trying:
+    m_b = m_a
+Expecting nothing
+ok
+Trying:
+    print(matrix_mul(m_a, m_b))
+Expecting:
+    [[7, 10], [15, 22]]
+ok
+Trying:
+    m_a = [[1, 2]]
+Expecting nothing
+ok
+Trying:
+    m_b = [
+    [3, 4],
+    [5, 6]
+    ]
+Expecting nothing
+ok
+Trying:
+    print(matrix_mul(m_a, m_b))
+Expecting:
+    [[13, 16]]
+ok
+Trying:
+    m_a = [
+    [1.2, 5.5, 6.2],
+    [4.66, 12.3, -9.2]
+    ]
+Expecting nothing
+ok
+Trying:
+    m_b = [
+    [5.0, 3.3],
+    [-2.9, 4.4],
+    [7.2, 4.4]
+    ]
+Expecting nothing
+ok
+Trying:
+    print(matrix_mul(m_a, m_b))
+Expecting:
+    [[34.69, 55.44000000000001], [-78.61, 29.018000000000008]]
+ok
+Trying:
+    m_a = [
+    [1, 2.2, 3.3, 4],
+    [5, 6, 7, 8.8],
+    ]
+Expecting nothing
+ok
+Trying:
+    m_b = [
+    [1.1, 2, 3.3],
+    [4.0, 5.5, 6],
+    [7, 8, 9],
+    [10.01, 11, 12.3]
+    ]
+Expecting nothing
+ok
+Trying:
+    print(matrix_mul(m_a, m_b))
+Expecting:
+    [[73.03999999999999, 84.5, 95.4], [166.58800000000002, 195.8, 223.74]]
+ok
+Trying:
+    print(matrix_mul())
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+ok
+Trying:
+    m_a = [
+    [1, 2],
+    [3, 4],
+    ]
+Expecting nothing
+ok
+Trying:
+    m_b = [
+    [1, 2],
+    [2, 3],
+    [4, 5]
+    ]
+Expecting nothing
+ok
+Trying:
+    print(matrix_mul(m_a, m_b))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    ValueError: m_a and m_b can't be multiplied
+ok
+Trying:
+    print(matrix_mul([], [[1, 2]]))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    ValueError: m_a can't be empty
+ok
+Trying:
+    print(matrix_mul([[1, 2]], [[]]))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    ValueError: m_b can't be empty
+ok
+Trying:
+    print(matrix_mul([[]], []))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    ValueError: m_a can't be empty
+ok
+Trying:
+    print(matrix_mul("not a list", [[1, 2]]))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a must be a list
+ok
+Trying:
+    print(matrix_mul([[1, 2]], "also not a list"))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_b must be a list
+ok
+Trying:
+    print(matrix_mul("not a list", "also not a list"))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a must be a list
+ok
+Trying:
+    print(matrix_mul(None, None))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a must be a list
+ok
+Trying:
+    print(matrix_mul([1, 2], [[3, 4]]))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a must be a list of lists
+ok
+Trying:
+    print(matrix_mul([[1, 2]], [3, 4]))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_b must be a list of lists
+ok
+Trying:
+    print(matrix_mul([1, 2], [3, 4]))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a must be a list of lists
+ok
+Trying:
+    print(matrix_mul([[1, "non-number"]], [[3, 4]]))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a should contain only integers or floats
+ok
+Trying:
+    print(matrix_mul([[1, 2]], [[{"a": 1}, 8.8]]))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_b should contain only integers or floats
+ok
+Trying:
+    print(matrix_mul([[1, "non-number"]], [[{"a": 1}, 8.8]]))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a should contain only integers or floats
+ok
+Trying:
+    m_a = [
+    [1, 2],
+    [3, 4, 5]
+    ]
+Expecting nothing
+ok
+Trying:
+    m_b = [
+    [1, 2],
+    [3, 4]
+    ]
+Expecting nothing
+ok
+Trying:
+    print(matrix_mul(m_a, m_b))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: each row of m_a must be of the same size
+ok
+Trying:
+    m_a = [
+    [1, 2],
+    [3, 4]
+    ]
+Expecting nothing
+ok
+Trying:
+    m_b = [
+    [1, 2],
+    [3, 4, 5]
+    ]
+Expecting nothing
+ok
+Trying:
+    print(matrix_mul(m_a, m_b))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: each row of m_b must be of the same size
+ok
+Trying:
+    m_a = [
+    [1, 2],
+    [3, 4, 5]
+    ]
+Expecting nothing
+ok
+Trying:
+    m_b = m_a
+Expecting nothing
+ok
+Trying:
+    print(matrix_mul(m_a, m_b))
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: each row of m_a must be of the same size
+ok
+1 items passed all tests:
+  39 tests in 100-matrix_mul.txt
+39 tests in 1 items.
+39 passed and 0 failed.
+Test passed.
