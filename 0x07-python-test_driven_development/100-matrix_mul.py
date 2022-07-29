@@ -32,7 +32,7 @@ def matrix_mul(m_a, m_b):
 
     m_dict = {"m_a": m_a, "m_b": m_b}  # for easy iteration
 
-    # Chec if inputs meet criteria
+    # Check if inputs meet criteria
     for key, value in m_dict.items():
         if not isinstance(value, list):
             raise TypeError(not_list_err.format(key))
