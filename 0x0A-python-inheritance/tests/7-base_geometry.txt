@@ -42,11 +42,11 @@
     >>> bg.integer_validator("my_int", -11)
     Traceback (most recent call last):
         ...
-    TypeError: my_int must be greater than 0
+    ValueError: my_int must be greater than 0
 
 ### If value is equal to 0
 
-    >>> bg.integer_validator("my_int", "76")
+    >>> bg.integer_validator("my_int", 0)
     Traceback (most recent call last):
         ...
-    TypeError: my_int must be greater than 0
+    ValueError: my_int must be greater than 0
