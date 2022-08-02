@@ -5,7 +5,7 @@ bg = BaseGeometry()
 
 bg.integer_validator("my_int", 12)
 bg.integer_validator("width", 89)
-bg.area(1)
+bg.area()
 
 
 try:

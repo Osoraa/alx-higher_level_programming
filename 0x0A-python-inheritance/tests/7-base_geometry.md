@@ -45,7 +45,7 @@
     TypeError: my_int must be an integer
 
 ### If value is type string
-    
+
     >>> bg.integer_validator("my_int", "76")
     Traceback (most recent call last):
         ...
