@@ -9,7 +9,21 @@
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("my_int", 12)
 
-### CNothing passed
+### Validate area
+
+    >>> bg.area()
+    Traceback (most recent call last):
+        ...
+    Exception: area() is not implemented
+
+### Validate area doesn't take arguments
+
+    >>> bg.area(1)
+    Traceback (most recent call last):
+        ...
+    TypeError: BaseGeometry.area() takes 1 positional argument but 2 were given
+
+### Nothing passed
 
     >>> bg.integer_validator() #doctest -o IGNORE_EXCEPTION_DETAIL
     Traceback (most recent call last):
@@ -31,7 +45,7 @@
     TypeError: my_int must be an integer
 
 ### If value is type string
-
+    
     >>> bg.integer_validator("my_int", "76")
     Traceback (most recent call last):
         ...
@@ -42,11 +56,11 @@
     >>> bg.integer_validator("my_int", -11)
     Traceback (most recent call last):
         ...
-    TypeError: my_int must be greater than 0
+    ValueError: my_int must be greater than 0
 
 ### If value is equal to 0
 
-    >>> bg.integer_validator("my_int", "76")
+    >>> bg.integer_validator("my_int", 0)
     Traceback (most recent call last):
         ...
-    TypeError: my_int must be greater than 0
+    ValueError: my_int must be greater than 0
