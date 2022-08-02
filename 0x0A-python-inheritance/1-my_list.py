@@ -15,10 +15,12 @@ class MyList(list):
     """
 
     def __init__(self):
+        """Initializes the list."""
+
         super().__init__()
 
     def print_sorted(self):
-        """Prints a sorted list.
+        """Prints the sorted list.
 
         Args:
             None.
