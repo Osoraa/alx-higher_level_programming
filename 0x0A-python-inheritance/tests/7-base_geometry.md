@@ -23,33 +23,19 @@
         ...
     TypeError: BaseGeometry.area() takes 1 positional argument but 2 were given
 
-### Nothing passed
+### Integer_validator empty
 
-    >>> bg.integer_validator() #doctest -o IGNORE_EXCEPTION_DETAIL
+    >>> bg.integer_validator()
     Traceback (most recent call last):
         ...
-    TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'name'
+    TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-### If value is not passed
+### If value is not passed to integer_validator
 
     >>> bg.integer_validator("my_int")
     Traceback (most recent call last):
         ...
-    TypeError: my_int must be an integer
-
-### If value is type bool
-
-    >>> bg.integer_validator("my_int", True)
-    Traceback (most recent call last):
-        ...
-    TypeError: my_int must be an integer
-
-### If value is type string
-
-    >>> bg.integer_validator("my_int", "76")
-    Traceback (most recent call last):
-        ...
-    TypeError: my_int must be an integer
+    TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
 
 ### If value is less than 0
 
@@ -64,3 +50,17 @@
     Traceback (most recent call last):
         ...
     ValueError: my_int must be greater than 0
+
+### If value is type bool
+
+    >>> bg.integer_validator("my_int", True)
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
+
+### If value is type string
+
+    >>> bg.integer_validator("my_int", "76")
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
