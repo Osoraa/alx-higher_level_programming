@@ -64,3 +64,31 @@
     Traceback (most recent call last):
         ...
     TypeError: my_int must be an integer
+
+### If value is type list
+
+    >>> bg.integer_validator("my_int", [76])
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
+
+### If value is type tuple
+
+    >>> bg.integer_validator("my_int", (76,))
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
+
+### If value is type None
+
+    >>> bg.integer_validator("my_int", None)
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
+
+### If value is type dict
+
+    >>> bg.integer_validator("my_int", {3, 4})
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
