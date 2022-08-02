@@ -1,0 +1,38 @@
+# Doctest document for the 1-my_list module
+
+## Import the BaseGeometry class from the module
+
+    >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+### Inputs
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("my_int", 12)
+
+### CNothing passed
+
+    >>> bg.integer_validator() #doctest -o IGNORE_EXCEPTION_DETAIL
+    Traceback (most recent call last):
+        ...
+    TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'name'
+
+### If value is not passed
+
+    >>> bg.integer_validator("my_int")
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
+
+### If value is type bool
+
+    >>> bg.integer_validator("my_int", True)
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
+
+### If value is type string
+
+    >>> bg.integer_validator("my_int", "76")
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
