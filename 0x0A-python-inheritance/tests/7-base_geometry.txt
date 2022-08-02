@@ -36,3 +36,17 @@
     Traceback (most recent call last):
         ...
     TypeError: my_int must be an integer
+
+### If value is less than 0
+
+    >>> bg.integer_validator("my_int", -11)
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be greater than 0
+
+### If value is equal to 0
+
+    >>> bg.integer_validator("my_int", "76")
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be greater than 0
