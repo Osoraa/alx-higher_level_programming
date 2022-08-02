@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-"""MyList module"""
+"""MyList module.
+
+Simple Usage:
+    >>> MyList = __import__('1-my_list').MyList
+
+"""
 
 
 class MyList(list):
