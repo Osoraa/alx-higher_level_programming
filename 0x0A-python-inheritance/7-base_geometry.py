@@ -1,7 +1,3 @@
-from cgi import test
-from typing import Type
-
-
 #!/usr/bin/python3
 """Base geometry module."""
 
