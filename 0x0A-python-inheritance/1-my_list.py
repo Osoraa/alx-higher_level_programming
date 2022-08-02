@@ -15,18 +15,9 @@ class MyList(list):
     """
 
     def __init__(self):
-        """Initializes the list."""
-
         super().__init__()
 
     def print_sorted(self):
-        """Prints the sorted list.
-
-        Args:
-            None.
-
-        Return:
-            None.
-        """
+        """Prints the sorted list."""
 
         print(sorted(self))
