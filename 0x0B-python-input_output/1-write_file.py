@@ -2,9 +2,6 @@
 """Write string module."""
 
 
-from codecs import utf_16_be_decode
-
-
 def write_file(filename="", text=""):
     """Writes a string to a test file."""
 
