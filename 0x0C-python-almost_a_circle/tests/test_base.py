@@ -8,7 +8,7 @@ from models.base import Base
 class TestBase(TestCase):
     """Tests the base class."""
 
-    def test_valid_arguments(self):
+    def test_base(self):
         a_base = Base()
         self.assertEqual(a_base.id, 1)
 
