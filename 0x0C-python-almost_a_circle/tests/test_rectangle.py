@@ -9,7 +9,7 @@ class TestRectangle(TestCase):
     """Tests the Rectangle class."""
 
     def test_rectangle(self):
-        """"""
+        """Test suite for the rectangle instance."""
 
         r1 = Rectangle(10, 2)
         self.assertEqual(r1.id, 1)

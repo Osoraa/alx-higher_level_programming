@@ -9,6 +9,8 @@ class TestBase(TestCase):
     """Tests the base class."""
 
     def test_base(self):
+        """Test suite for the base instance"""
+
         a_base = Base()
         self.assertEqual(a_base.id, 1)
 
