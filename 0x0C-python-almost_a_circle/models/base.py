@@ -3,7 +3,7 @@
 
 
 class Base:
-    """Base class.
+    """Base class. Provides a Base class for subsequent Classes
 
     Attributes:
         __nb_objects: Keeps track of all instances of the base class.
