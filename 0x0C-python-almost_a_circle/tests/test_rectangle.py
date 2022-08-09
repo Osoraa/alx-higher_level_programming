@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """Test document for the rectangle module."""
 
-from unittest import TestCase
+import unittest
 from models.rectangle import Rectangle
 
 
-class TestRectangle(TestCase):
+class TestRectangle(unittest.TestCase):
     """Tests the Rectangle class."""
 
-    def test_rectangle(self):
+    def test_rec_one(self):
         """Test suite for the rectangle instance."""
 
         r1 = Rectangle(10, 2)
@@ -22,3 +22,13 @@ class TestRectangle(TestCase):
         r3 = Rectangle(10, 2, 7, 9, 12)
         self.assertEqual(r3.id, 12)
         self.assertEqual((r3.x, r3.y, r3.width, r3.height, r3.id), (7, 9, 10, 2, 12))
+
+    def test_attributes(self):
+        """Validates instance attributes."""
+
+        self.assertRaises(TypeError, Rectangle)
+        self.assertRaises(TypeError, Rectangle, None, 1)
+        self.assertRaises(TypeError, Rectangle, [], 1)
+        self.assertRaises(TypeError, Rectangle, (), 1)
+        self.assertRaises(TypeError, Rectangle, {}, 1)
+        # self.assertRaises(TypeError, Rectangle, , 1)
