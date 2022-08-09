@@ -31,7 +31,7 @@ class Rectangle(Base):
         if type(value) is not int:
             raise TypeError("width must be an integer")
 
-        if value < 0:
+        if value < 1:
             raise ValueError("width must be > 0")
 
         self.__width = value
@@ -46,7 +46,7 @@ class Rectangle(Base):
         if type(value) is not int:
             raise TypeError("height must be an integer")
 
-        if value < 0:
+        if value < 1:
             raise ValueError("height must be > 0")
 
         self.__height = value
@@ -90,15 +90,6 @@ class Rectangle(Base):
 
         return self.__height * self.__width
 
-    def display(self):
-        """Prints the rectangle with the "#" character, ofsetting by x & y."""
-
-        for _ in range(self.__y):
-            print("")
-
-        for _ in range(self.__height):
-            print(f"{' ' * self.__x}{'#' * self.__width}")
-
     def __str__(self) -> str:
         """Prints the rectangle instance.
 
@@ -111,3 +102,20 @@ class Rectangle(Base):
             f"({self.id}) {self.__x}/{self.__y} - "
             f"{self.__width}/{self.__height}"
         )
+
+    def display(self):
+        """Prints the rectangle with the "#" character, ofsetting by x & y."""
+
+        for _ in range(self.__y):
+            print("")
+
+        for _ in range(self.__height):
+            print(f"{' ' * self.__x}{'#' * self.__width}")
+
+    def update(self, *args):
+        """Assigns args to instance attributes."""
+
+        attr = ('id', 'width', 'height', 'x', 'y')
+
+        for i in range(len(args)):
+            setattr(self, attr[i], )
