@@ -118,4 +118,4 @@ class Rectangle(Base):
         attr = ('id', 'width', 'height', 'x', 'y')
 
         for i in range(len(args)):
-            setattr(self, attr[i], )
+            setattr(self, attr[i], args[i])
