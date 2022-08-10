@@ -112,10 +112,13 @@ class Rectangle(Base):
         for _ in range(self.__height):
             print(f"{' ' * self.__x}{'#' * self.__width}")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns args to instance attributes."""
 
         attr = ('id', 'width', 'height', 'x', 'y')
 
         for i in range(len(args)):
             setattr(self, attr[i], args[i])
+
+        for key, value in kwargs.items():
+            setattr(self, key, value)
