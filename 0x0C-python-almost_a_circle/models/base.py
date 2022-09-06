@@ -6,7 +6,7 @@ class Base:
     """Base class. Provides a Base class for subsequent Classes
 
     Attributes:
-        __nb_objects: Keeps track of all instances of the base class.
+        nb_objects (private): Keeps track of all instances of the base class.
 
     Args:
         id: Public instance id.

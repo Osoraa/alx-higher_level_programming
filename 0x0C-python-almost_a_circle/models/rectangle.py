@@ -99,8 +99,8 @@ class Rectangle(Base):
 
         return (
             f"[{self.__class__.__name__}] "
-            f"({self.id}) {self.__x}/{self.__y} - "
-            f"{self.__width}/{self.__height}"
+            f"({self.id}) {self.x}/{self.y} - "
+            f"{self.width}/{self.height}"
         )
 
     def display(self):
@@ -121,4 +121,4 @@ class Rectangle(Base):
             setattr(self, attr[i], args[i])
 
         for key, value in kwargs.items():
-            setattr(self, key, value)
+            setattr(self, key, value)   
