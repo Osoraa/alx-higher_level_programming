@@ -1,4 +1,4 @@
--- Lists all genres for all shows
+-- Lists all genres for ALL shows
 SELECT title, name
 FROM tv_shows AS tvs
 LEFT JOIN tv_show_genres ON tvs.id = show_id
