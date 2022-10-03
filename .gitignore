@@ -1,10 +1,11 @@
-# Local
+# Alx
 .vscode
 _putchar.c
 temp
 test.c
 demo.c
 *zip*
+*lock.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
