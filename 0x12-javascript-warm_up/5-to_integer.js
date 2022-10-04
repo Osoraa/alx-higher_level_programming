@@ -3,7 +3,7 @@ const args = process.argv;
 const num = parseInt(args[2]);
 
 if (num) {
-  console.log(`My number: ${parseInt(process.argv[2])}`);
+  console.log(`My number: ${parseInt(num)}`);
 } else {
   console.log('Not a number');
 }
