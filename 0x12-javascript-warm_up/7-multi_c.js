@@ -5,6 +5,7 @@ if (!i) {
   console.log('Missing number of occurrences');
 }
 
-while (i--) {
+while (i > 0) {
   console.log('C is fun');
+  i--;
 }
