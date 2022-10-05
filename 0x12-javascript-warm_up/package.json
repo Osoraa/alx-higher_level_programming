@@ -1,1 +1,10 @@
-{}
+{
+  "name": "0x12-javascript-warm_up",
+  "devDependencies": {
+    "semistandard": "16.0.1",
+    "node": "14.10.0"
+  },
+  "scripts": {
+    "test": "semistandard *.js"
+  }
+}
