@@ -5,6 +5,6 @@
     "node": "14.10.0"
   },
   "scripts": {
-    "test": "semistandard *.js"
+    "test": "semistandard | snazzy"
   }
 }
