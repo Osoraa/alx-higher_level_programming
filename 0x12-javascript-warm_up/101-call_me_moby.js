@@ -3,6 +3,6 @@
 exports.callMeMoby = function (x, func) {
   while (x > 0) {
     func();
-    x--
+    x--;
   }
 };
