@@ -7,7 +7,7 @@ function filterSort (args) {
       nums.push(parseInt(arg));
     }
   }
-  
+
   if (nums.length <= 1) {
     return [0, 0];
   } else {
