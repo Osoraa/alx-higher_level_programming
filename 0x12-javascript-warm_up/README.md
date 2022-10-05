@@ -1,5 +1,7 @@
 # Solutions to the **_0x12-JavaScript - Warm up_** set of tasks
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 ## Strategy
 
 Learning how to use JS for two major purposes:
