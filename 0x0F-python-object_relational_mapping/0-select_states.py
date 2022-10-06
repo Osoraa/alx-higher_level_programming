@@ -1,5 +1,5 @@
 #!/usr/bin/python
-""" Lists all states from the hbtn_0e_0_usa database.
+""" Lists all states starting with N from the hbtn_0e_0_usa database.
 
 Usage:
     ./0-select_states.py <user> <passwd> <database>
