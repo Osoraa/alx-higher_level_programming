@@ -1,12 +1,21 @@
 #!/usr/bin/python
-""""""
+""" Lists all states starting with N from the hbtn_0e_0_usa database.
+
+Usage:
+    ./1-filter_states.py <user> <passwd> <database>
+"""
+
 from sys import argv
 import MySQLdb as mdb
 
-# Selects all rows from hbtn_0e_0_usa where states.name starts with N
-cur = mdb.connect("localhost", argv[1], argv[2], argv[3]).cursor()
 
-cur.execute("SELECT id, name FROM states WHERE name LIKE 'N%'")
+if __name__ == "__main__":
+    db = mdb.connect("localhost", argv[1], argv[2], argv[3])
+    cur = db.cursor()
 
-for row in cur.fetchall():
-    print(row)
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    for row in cur.fetchall():
+        print(row)
+
+    cur.close()
+    db.close()
