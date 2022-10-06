@@ -10,7 +10,9 @@ import MySQLdb as mdb
 
 
 if __name__ == "__main__":
-    db = mdb.connect("localhost", argv[1], argv[2], argv[3], port=3306)
+    db = mdb.connect(
+        host="localhost", user=argv[1], passwd=argv[2], db=argv[3], port=3306
+    )
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states")
