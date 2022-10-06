@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ Lists all states starting with N from the hbtn_0e_0_usa database.
 
 Usage:
