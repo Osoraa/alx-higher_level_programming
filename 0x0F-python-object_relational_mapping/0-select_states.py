@@ -3,7 +3,6 @@
 
 Usage:
     ./0-select_states.py <user> <passwd> <database>
-
 """
 
 from sys import argv
