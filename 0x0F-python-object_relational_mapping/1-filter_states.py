@@ -15,7 +15,8 @@ if __name__ == "__main__":
 
     cur.execute("SELECT * FROM states WHERE name LIKE 'N%'")
     for row in cur.fetchall():
-        print(row)
+        if row[1][0].isupper():
+            print(row)
 
     cur.close()
     db.close()
