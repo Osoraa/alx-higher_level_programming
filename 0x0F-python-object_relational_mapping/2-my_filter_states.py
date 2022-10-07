@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all states matching a given string but unsafe from SQLI.
+""" Lists all states matching a given string but unsafe from SQLI.
 
 Usage:
     ./2-my_filter_states <user> <passwd> <database> <query_string>
