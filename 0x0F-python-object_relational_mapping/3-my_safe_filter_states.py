@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+""" Lists all states matching a given string but safe from SQLI.
+
+Usage:
+    ./3-my_safe_filter_states <user> <passwd> <database> <query_string>
+
+"""
+
+
 from sys import argv
 import MySQLdb as mdb
 
