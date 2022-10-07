@@ -5,3 +5,7 @@
 - Understanding the Object Relational Mappers (ORM), it's benefits and drawbacks.
 
 - Drivers versus ORMs vs Drivers
+
+- SQL Injection
+
+
