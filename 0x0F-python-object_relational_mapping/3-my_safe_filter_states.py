@@ -6,7 +6,6 @@ Usage:
 
 """
 
-
 from sys import argv
 import MySQLdb as mdb
 
