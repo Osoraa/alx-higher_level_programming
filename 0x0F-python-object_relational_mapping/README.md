@@ -4,8 +4,8 @@
 
 - Understanding the Object Relational Mappers (ORM), it's benefits and drawbacks.
 
-- Drivers versus ORMs vs Drivers
+- Drivers versus ORMs vs Drivers/Connectors
 
-- SQL Injection
+- SQL Injection mitigation techniques
 
-
+- That Mike Bayer is a genius!
