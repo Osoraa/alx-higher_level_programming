@@ -8,17 +8,18 @@ Usage:
 
 from sys import argv
 from sqlalchemy import create_engine
-from model_state import Base, State
+from sqlalchemy.orm import sessionmaker
+from model_state import State
 
 
 if __name__ == "__main__":
     db_url = f"mysql+mysqldb://{argv[1]}:{argv[2]}@localhost/{argv[3]}"
     engine = create_engine(db_url)
+    Session = sessionmaker(bind=engine)
 
-    result = engine.execute(f"SELECT * from {State.__tablename__}")
+    with Session() as session:
+        result = session.query(State)
 
     for row in result:
-        print(*row, sep=": ")
+        print(row.id, row.name, sep=": ")
 
-    # session = engine.connect()
-    # session.execute(f"select * from {State}")
