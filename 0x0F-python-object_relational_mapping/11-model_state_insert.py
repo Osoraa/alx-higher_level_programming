@@ -19,7 +19,7 @@ if __name__ == "__main__":
     engine = create_engine(db_url)
     Session = sessionmaker(bind=engine)
 
-    s = State(name = "Louisiana")
+    s = State(name="Louisiana")
 
     with Session() as session:
         session.add(s)
