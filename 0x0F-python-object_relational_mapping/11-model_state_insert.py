@@ -21,5 +21,7 @@ if __name__ == "__main__":
 
     s = State(name = "Louisiana")
     
-    with Session.begin() as session:
+    with Session() as session:
         session.add(s)
+        session.commit()
+        print(s.id)
