@@ -19,7 +19,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
 
     with Session() as session:
-        result = session.query(State)
+        result = session.query(State).filter(State.name.like("%a%"))
 
     for row in result:
         if "a" not in row.name:
