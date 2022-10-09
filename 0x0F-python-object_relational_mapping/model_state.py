@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-""" Implements the State Class along with an instance, Base.
+"""Model init script
 
-Usage:
-    ./6-model_state.py <user> <passwd> <database>
+Implements the State Class along with an instance, Base.
+
+Example:
+
+    $ ./6-model_state.py <user> <passwd> <database>
 
 """
 

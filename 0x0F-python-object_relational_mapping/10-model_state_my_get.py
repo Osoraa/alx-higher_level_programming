@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-""" Prints the first state object from a database
+"""Database query script with SQLAlchemy.
+
+Queries a database for rows matching an argument.
 
 Usage:
-    ./8-model_state_fetch_first.py <user> <passwd> <database>
+    $ ./10-model_state_my_get.py <user> <passwd> <database> <state_name>
 
 """
 
@@ -17,9 +19,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
 
     with Session() as session:
-        result = session.query(State).first()
-
-    if not result:
-        print("Nothing")
-    else:
-        print(result.id, result.name, sep=": ")
+        try:
+            result = session.query(State).filter(State.name == argv[4]).one()
+            print(result.id)
+        except Exception:
+            print("Not found")

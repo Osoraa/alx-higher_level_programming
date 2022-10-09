@@ -2,7 +2,7 @@
 """ Lists all states from the hbtn_0e_6_usa db using SQLAlchemy.
 
 Usage:
-    ./7-model_state_fetch_all <user> <passwd> <database>
+    ./7-model_state_fetch_all.py <user> <passwd> <database>
 
 """
 

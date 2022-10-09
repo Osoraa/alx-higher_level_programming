@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-""" Queries a database for rows matching an argument
+"""Database query script.
 
-Usage:
-    ./9-model_state.py <user> <passwd> <database>
+Queries a database for rows matching an argument.
+
+Example:
+    $ ./9-model_state_filter_a.py <user> <passwd> <database>
 
 """
 
