@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""Model init script
+"""State model init script.
 
-Implements the State Class along with an instance, Base.
+Implements the State Class along with its Super class, Base.
 
 Example:
-
     $ ./6-model_state.py <user> <passwd> <database>
 
 """
