@@ -3,9 +3,6 @@
 
 Implements the State Class along with its Super class, Base.
 
-Example:
-    $ ./6-model_state.py <user> <passwd> <database>
-
 """
 
 from sqlalchemy.orm import declarative_base

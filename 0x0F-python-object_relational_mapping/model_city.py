@@ -3,15 +3,10 @@
 
 Implements the City class.
 
-Usage:
-    $ ./6-model_state.py <user> <passwd> <database>
-
 """
 
-from sys import argv
 from model_state import Base, State
 from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship
 
 
 class City(Base):
