@@ -10,8 +10,8 @@ Usage:
 
 from sys import argv
 from sqlalchemy import create_engine
-from model_city import State, City
 from sqlalchemy.orm import sessionmaker
+from model_city import State, City
 
 if __name__ == "__main__":
     db_url = f"mysql://{argv[1]}:{argv[2]}@localhost/{argv[3]}"
