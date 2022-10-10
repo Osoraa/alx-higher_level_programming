@@ -11,8 +11,7 @@ Usage:
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from relationship_state import Base, State
-from relationship_city import City
+from relationship_city import City, Base, State
 
 
 if __name__ == "__main__":
@@ -28,4 +27,4 @@ if __name__ == "__main__":
     for row in result:
         print(f"{row.id}: {row.name}")
         for city in row.cities:
-            print(f"    {city.id}: {city.name}")
+            print(f"\t{city.id}: {city.name}")
