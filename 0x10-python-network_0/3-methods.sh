@@ -1,3 +1,3 @@
 #!/bin/bash
 # Get the methods available on a url
-curl -sX OPTIONS "$1"
+curl -sIX OPTIONS "$1" | grep Allow | tail -c +8
