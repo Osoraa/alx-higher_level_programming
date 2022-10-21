@@ -10,3 +10,5 @@
 - The TCP IP relationship, handshakes, data integrity, rechecking to name a few.
 - UDP, it's typical use-case scenario and differences with TCP
 - More bash-scripting
+- Chaining bash using pipe operator
+- By-passing sudo permissions needd to write to a file using tee
